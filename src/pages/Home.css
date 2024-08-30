@@ -1,156 +1,140 @@
-/* Estilos generales */
+/* General */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h4 {
+    color: #004d99; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #004d99;
+    border-color: #004d99;
+}
+
+.btn-primary:hover {
+    background-color: #003d80;
+    border-color: #003d80;
 }
 
 /* Sección de Inicio */
 .inicio-bg {
-    background-image: url('/images/inicio-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to right top, #2807cd, #2239d9, #2d57e1, #4371e6, #5e89e8, #589cf0, #5baef5, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     height: 100vh;
+    width: 100vw; 
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.inicio-bg .container {
-    text-align: center;
-    color: white;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
-.inicio-bg h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.animated {
+    animation-duration: 2s;
 }
 
-.inicio-bg .btn {
-    font-size: 1.5rem;
-    padding: 0.75rem 2rem;
+.fadeIn {
+    animation-name: fadeIn;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* Sección Sobre Nosotros */
-.sobre-nosotros-bg {
-    background-color: #2c3e50;
-    color: white;
-    padding: 4rem 0;
+.sobre-nosotros-section {
+    background-color: #f4f4f4;
+    padding: 60px 0;
 }
 
-.sobre-nosotros-bg h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+.info-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sobre-nosotros-bg p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+.info-card h4 {
+    color: #333;
+    margin-bottom: 15px;
 }
 
-/* Sección de Galería */
-.gallery-section {
-    background-color: #f8f9fa;
-    padding: 4rem 0;
+.info-card p {
+    color: #666;
 }
 
-.gallery-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste general */
+.text-center {
     text-align: center;
 }
 
-.carousel-container {
-    max-width: 800px;
-    margin: 0 auto;
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.carousel-item img {
-    height: 500px;
-    object-fit: cover;
-}
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-}
-
-.carousel-control-icon {
-    width: 30px;
-    height: 30px;
-}
-
-/* Sección de Contacto */
-#contacto {
-    background-color: #ecf0f1;
-    padding: 4rem 0;
-}
-
-#contacto h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
+/* Sección de Registro */
+.registro-section {
+    background-color: #e9ecef;
+    padding: 60px 0;
 }
 
 .form-label {
     font-weight: bold;
 }
 
+/* Sección de Galería */
+.gallery-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 400px;
+}
+
+/* Sección de Contacto */
+.contacto-section {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
 .form-control {
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.btn-primary {
-    background-color: #3498db;
-    border: none;
-    padding: 0.75rem 2rem;
-    font-size: 1.25rem;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color: #2980b9;
 }
 
 /* Sección de Información y Mapa */
 .info-mapa-section {
-    background-color: #34495e;
+    background-color: #004d99;
     color: white;
-    padding: 4rem 0;
+    padding: 60px 0;
 }
 
-.social-icons h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.social-icons ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.social-icons li {
-    list-style: none;
-}
-
-.social-icons img {
-    width: 40px;
-    height: 40px;
-}
-
-.info-mapa-section h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.map-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+#map-container {
+    margin-top: 20px;
 }
