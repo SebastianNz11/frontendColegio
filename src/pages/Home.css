@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sección de Inicio */
+.inicio-bg {
+    background-image: url('/images/inicio-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-bg .container {
+    text-align: center;
+    color: white;
+}
+
+.inicio-bg h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.inicio-bg .btn {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros-bg {
+    background-color: #2c3e50;
+    color: white;
+    padding: 4rem 0;
+}
+
+.sobre-nosotros-bg h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-nosotros-bg p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Sección de Galería */
+.gallery-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Sección de Contacto */
+#contacto {
+    background-color: #ecf0f1;
+    padding: 4rem 0;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Sección de Información y Mapa */
+.info-mapa-section {
+    background-color: #34495e;
+    color: white;
+    padding: 4rem 0;
+}
+
+.social-icons h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.info-mapa-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

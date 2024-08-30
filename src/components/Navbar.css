@@ -1,0 +1,98 @@
+/* Ajustes generales para la barra de navegación */
+.navbar {
+    background-color: #17118f;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+    font-family: 'Nanum Myeongjo', serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+/* Ajustes para el logo y la marca */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white !important;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+/* Alinear enlaces de navegación horizontalmente */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e6f2ff !important;
+}
+
+/* Ajustes para el botón de menú en pantallas pequeñas */
+.navbar-toggler {
+    border: none;
+    color: white;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.collapse {
+    justify-content: flex-end;
+}
+
+/* Mejorar la responsividad */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Evitar que el contenido quede cubierto por la barra de navegación */
+body {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
