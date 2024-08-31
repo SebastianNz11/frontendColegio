@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaImages, FaEnvelope, FaNewspaper, FaConciergeBell, FaUser } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const isScrolled = window.scrollY > 50; // Detecta cuando se ha hecho scroll
+    setScrolled(isScrolled);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav className={`navbar navbar-expand-lg navbar-light fixed-top ${scrolled ? 'scrolled' : ''}`}>
       <div className="container-fluid">
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img src="/images/logo.png" alt="Logo" className="d-inline-block align-top me-2" />
@@ -67,3 +81,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

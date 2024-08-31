@@ -1,6 +1,6 @@
 /* Ajustes generales para la barra de navegación */
 .navbar {
-    background-color:#191652;
+    background-color:linear-gradient(180deg, rgba(30, 87, 153, 0.8), rgba(41, 137, 216, 0.8));
     padding: 0.5rem 1rem;
     position: fixed;
     width: 100%;
@@ -12,8 +12,28 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
+    border-bottom: none; /* Elimina sombra y borde inferior */
+    box-shadow: none;
   }
+
+  /* Ajustes generales para la barra de navegación con degradado transparente */
+.navbar {
+  background: linear-gradient(180deg, rgba(30, 87, 153, 0.8), rgba(41, 137, 216, 0.5), rgba(255, 255, 255, 0)); /* Mantener el degradado hacia transparencia */
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1030;
+  transition: background 0.3s ease; /* Suavizar la transición del degradado */
+}
+
+/* Cambiar el fondo cuando se hace scroll */
+.navbar.scrolled {
+  background: linear-gradient(180deg, rgba(30, 87, 153, 0.8), rgba(41, 137, 216, 0.5), rgba(255, 255, 255, 0)); /* Mantener el degradado hacia transparencia */
+  transition: background 0.3s ease; /* Suavizar la transición al color sólido */
+}
+
   
   /* Ajustes para el logo y la marca */
   .navbar-brand {

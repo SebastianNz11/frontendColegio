@@ -1,19 +1,25 @@
 /* General */
 body {
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right top, #2807cd, #2239d9, #2d57e1, #4371e6, #5e89e8, #589cf0, #5baef5, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 h2, h4 {
     color: #004d99; 
 }
 
-a {
-    text-decoration: none;
+a :hover {
+    color: #003d80;
 }
 
 .btn-primary {
     background-color: #004d99;
     border-color: #004d99;
+    color: white;
 }
 
 .btn-primary:hover {
@@ -24,7 +30,7 @@ a {
 /* Sección de Inicio */
 .inicio-bg {
     background-image: linear-gradient(to right top, #2807cd, #2239d9, #2d57e1, #4371e6, #5e89e8, #589cf0, #5baef5, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw; 
     display: flex;
     align-items: center;
