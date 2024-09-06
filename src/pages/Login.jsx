@@ -16,14 +16,9 @@ const Login = () => {
                             <label htmlFor="password" className="form-label">Contraseña</label>
                             <input type="password" className="form-control" id="password" name="password" required />
                         </div>
-                        <div className="mb-3 form-check">
-                            <input type="checkbox" className="form-check-input" id="rememberMe" />
-                            <label className="form-check-label" htmlFor="rememberMe">Recordar mi contraseña</label>
-                        </div>
                         <button type="submit" className="btn btn-primary w-100">Iniciar sesión</button>
                     </form>
                     <div className="text-center mt-3">
-                        <p>¿No tienes cuenta? <a href="/registro">Regístrate</a></p>
                         <p><a href="#">Recuperar contraseña</a></p>
                     </div>
                 </div>
