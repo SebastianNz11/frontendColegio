@@ -1,6 +1,6 @@
 /* Ajustes generales para la barra de navegación */
 .navbar {
-    background-color:linear-gradient(180deg, rgba(30, 87, 153, 0.8), rgba(41, 137, 216, 0.8));
+    background-color: rgba(30, 87, 153, 0.8);
     padding: 0.5rem 1rem;
     position: fixed;
     width: 100%;
@@ -19,19 +19,17 @@
 
   /* Ajustes generales para la barra de navegación con degradado transparente */
 .navbar {
-  background: linear-gradient(180deg, rgba(30, 87, 153, 0.8), rgba(41, 137, 216, 0.5), rgba(255, 255, 255, 0)); /* Mantener el degradado hacia transparencia */
+  background: rgba(30, 87, 153, 0.8); /* Mantener el degradado hacia transparencia */
   padding: 0.5rem 1rem;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1030;
-  transition: background 0.3s ease; /* Suavizar la transición del degradado */
 }
 
 /* Cambiar el fondo cuando se hace scroll */
 .navbar.scrolled {
-  background: linear-gradient(180deg, rgba(30, 87, 153, 0.8), rgba(41, 137, 216, 0.5), rgba(255, 255, 255, 0)); /* Mantener el degradado hacia transparencia */
-  transition: background 0.3s ease; /* Suavizar la transición al color sólido */
+  background: rgba(30, 87, 153, 0.8);
 }
 
   
@@ -112,10 +110,5 @@
     .navbar-nav .nav-link {
       padding: 0.5rem 0;
     }
-  }
-  
-  /* Evitar que el contenido quede cubierto por la barra de navegación */
-  body {
-    padding-top: 60px; /* Ajuste valor altura */
   }
   

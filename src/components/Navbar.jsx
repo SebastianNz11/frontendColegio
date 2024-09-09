@@ -7,7 +7,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    const isScrolled = window.scrollY > 50; // Detecta cuando se ha hecho scroll
+    const isScrolled = window.scrollY > 50;
     setScrolled(isScrolled);
   };
 
