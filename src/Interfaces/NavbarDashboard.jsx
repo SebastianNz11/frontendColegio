@@ -5,7 +5,7 @@ export const NavbarDashboard = () => {
     <div>
       <nav className="navbar navbar-expand-lg bg-body-primary fixed-top">
         <div className="container-fluid">
-          <Link className="navbar-brand display-6" to="/">
+          <Link className="navbar-brand display-6" to="/dashboard">
             <img src={imagen} alt="Logo" />
             El Compilador
           </Link>
@@ -23,29 +23,49 @@ export const NavbarDashboard = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/grados">
                   Grados
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/cursos">
                   Cursos
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/padres">
                   Padres
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/estudiantes">
                   Estudiantes
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/profesores">
                   Profesores
-                </a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/notas">
+                  Notas
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/pagos">
+                  Pagos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/cursos">
+                  Cursos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/moras">
+                  Moras
+                </Link>
               </li>
             </ul>
           </div>
