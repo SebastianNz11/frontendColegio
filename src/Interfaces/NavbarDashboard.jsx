@@ -1,12 +1,14 @@
-
+import { Link } from "react-router-dom";
+import imagen from "../../public/images/logo.png";
 export const NavbarDashboard = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-primary fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <Link className="navbar-brand display-6" to="/">
+            <img src={imagen} alt="Logo" />
+            El Compilador
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -21,23 +23,28 @@ export const NavbarDashboard = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
+                <a className="nav-link" href="#">
+                  Grados
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Features
+                  Cursos
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Pricing
+                  Padres
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">
-                  Disabled
+                <a className="nav-link" href="#">
+                  Estudiantes
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Profesores
                 </a>
               </li>
             </ul>
