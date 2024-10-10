@@ -58,11 +58,6 @@ export const NavbarDashboard = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/cursos">
-                  Cursos
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/moras">
                   Moras
                 </Link>
