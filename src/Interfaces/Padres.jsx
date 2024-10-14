@@ -56,7 +56,7 @@ export const Padres = () => {
   };
 
   const PostData = async (data) => {
-    const { nombres, apellidos, correo, contrasenia, id_rol } = data;
+    const { nombres, apellidos, correo, id_rol } = data;
     try {
       const response = await fetch("http://localhost:4000/padres", {
         method: "POST",
@@ -67,7 +67,6 @@ export const Padres = () => {
           nombres,
           apellidos,
           correo,
-          contrasenia,
           id_rol,
         }),
       });
