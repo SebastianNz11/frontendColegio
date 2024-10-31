@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaImages, FaEnvelope, FaNewspaper, FaConciergeBell, FaUser } from 'react-icons/fa';
 import './Navbar.css';

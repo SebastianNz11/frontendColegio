@@ -22,7 +22,7 @@ export const FormularioProfesores = ({
       try {
         const response = await fetch("http://localhost:4000/cursos");
         const data = await response.json();
-        setRoles(data);
+        setCursos(data);
       } catch (error) {
         console.error("Error al obtener los roles:", error);
       }
@@ -75,7 +75,7 @@ export const FormularioProfesores = ({
       )}
       <input
         type="email"
-        placeholder="Correo"
+        placeholder="correo"
         className="form-control mb-3 mt-3"
         {...register("correo", {
           required: { value: true, message: "Correo es requerido" },
@@ -96,7 +96,7 @@ export const FormularioProfesores = ({
           </option>
           {cursos.map((curso) => (
             <option key={curso.id_curso} value={curso.id_curso}>
-              {curso.nombres} {curso.apellidos}
+              {curso.nombre_curso}
             </option>
           ))}
         </select>
